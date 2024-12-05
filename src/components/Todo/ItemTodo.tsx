@@ -1,7 +1,7 @@
-import { Button } from "./ui/button";
-import { Checkbox } from "./ui/checkbox";
-import { Label } from "./ui/label";
-import { Item } from "../types/items";
+import { Button } from "../ui/button";
+import { Checkbox } from "../ui/checkbox";
+import { Label } from "../ui/label";
+import { Item } from "../../types/items";
 
 interface TodoItemProps {
     item: Item;

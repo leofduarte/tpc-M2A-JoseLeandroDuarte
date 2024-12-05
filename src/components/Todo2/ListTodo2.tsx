@@ -1,6 +1,6 @@
-import { Item } from "../types/items";
-import { EditTodoItem } from "./EditTodoItem";
-import { TodoItem } from "./TodoItem";
+import { Item } from "../../types/items";
+import { EditTodoItem2 } from "./EditTodoItem2";
+import { TodoItem2 } from "./ItemTodo2";
 
 interface TodoListProps {
     items: Item[];
@@ -12,14 +12,14 @@ interface TodoListProps {
     onChange: (id: number, value: string) => void;
   }
   
-  export const TodoList = (props: TodoListProps) => (
+  export const TodoList2 = (props: TodoListProps) => (
     <ul className="space-y-2">
       {props.items.length > 0 ? (
         props.items.map((item) =>
           !item.toChange ? (
-            <TodoItem key={item.id} item={item} {...props} />
+            <TodoItem2 key={item.id} item={item} {...props} />
           ) : (
-            <EditTodoItem key={item.id} item={item} {...props} />
+            <EditTodoItem2 key={item.id} item={item} {...props} />
           )
         )
       ) : (

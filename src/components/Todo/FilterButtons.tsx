@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
-import { FilterType } from "../types/items";
+import { Button } from "../ui/button";
+import { FilterType } from "../../types/items";
 
 
 interface FilterButtonsProps {
